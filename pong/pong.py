@@ -47,7 +47,7 @@ player2=Player('racket.png',600,200,5,5,40,100)
 
 ball = Ball('tenis_ball.png',325,225,3,3,50,50)
 
-attempts = 4
+#attempts = 4
 
 while game:
     import time
@@ -79,12 +79,12 @@ while game:
         ball.update()
         ball.reset()
     keys_pressed = key.get_pressed()
-    if keys_pressed[K_r] and attempts >0:
+    if keys_pressed[K_r]# and attempts >0:
         ball.rect.x =325
         ball.rect.y =225
         player1.rect.y =200
         player2.rect.y =200
-        attempts -= 1
+#        attempts -= 1
         finish = False
     display.update()
     clock.tick(FPS)
