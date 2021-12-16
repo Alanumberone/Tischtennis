@@ -79,7 +79,7 @@ while game:
         ball.update()
         ball.reset()
     keys_pressed = key.get_pressed()
-    if keys_pressed[K_r]# and attempts >0:
+    if keys_pressed[K_r]''' and attempts >0''':
         ball.rect.x =325
         ball.rect.y =225
         player1.rect.y =200
